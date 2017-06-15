@@ -647,9 +647,6 @@ tbody tr:nth-child(odd) th {
             order: 1; } }
 
 .header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   position: absolute;
   top: 0;
   left: 0;
@@ -657,14 +654,18 @@ tbody tr:nth-child(odd) th {
   height: auto;
   background: #363636;
   color: white; }
-  .header .logo {
-    padding: 10px 0; }
+  .header a {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    padding: 20px; }
 
-.page-wrap {
-  padding-top: 100px; }
+section.pad {
+  padding: 60px 0; }
 
-.title {
-  text-align: center; }
+.hero {
+  height: 75vh;
+  background: #229498; }
 
 form {
   margin: 20px auto 40px;

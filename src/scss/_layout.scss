@@ -1,7 +1,6 @@
 // Layout
 
 .header {
-  display: flex;
   position: absolute;
   top: 0;
   left: 0;
@@ -9,17 +8,36 @@
   height: auto;
   background: $black;
   color: white;
-  .logo {
-    padding: 10px 0;
+  a {
+    display: inline-flex;
+    padding: 20px;
   }
 }
 
-.page-wrap {
-  padding-top: 100px;
+.page-wrap {}
+
+section {
+  &.pad {
+    padding: 60px 0;
+  }
 }
-.title {
-  text-align: center;
+
+
+// Hero
+.hero {
+  height: 75vh;
+  background: $primary;
 }
+
+
+
+
+
+
+
+
+
+
 form {
   margin: 20px auto 40px;
   text-align: center;

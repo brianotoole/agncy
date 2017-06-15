@@ -1,0 +1,76 @@
+// Layout
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  background: $black;
+  color: white;
+  .logo {
+    padding: 10px 0;
+  }
+}
+
+.page-wrap {
+  padding-top: 100px;
+}
+.title {
+  text-align: center;
+}
+form {
+  margin: 20px auto 40px;
+  text-align: center;
+  .error {
+    display: block;
+    color: red;
+  }
+}
+input {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  margin: 15px auto;
+  border: none;
+  border-bottom: 4px solid $gray;
+  padding: 10px;
+}
+button {
+  position: relative;
+  background-color: $primary;
+  border: none;
+  color: #fff;
+  display: inline-block;
+  font-size: 1em;
+  font-weight: normal;
+  padding: 10px 30px;
+  transition: 0.25s all ease-out;
+  cursor: pointer;
+  &:hover {
+    background: darken($primary,7%);
+  }
+}
+
+.items {
+  .item {
+    padding: 5px;
+    background: $gray;
+    border-bottom: 1px solid #fff;
+    &:hover {
+      background: darken($gray,7%);
+    }
+    &:nth-child(even) {
+      background: darken($gray,7%);
+      &:hover {
+        background: darken($gray,14%);
+      }
+    }
+  }
+  li a {
+    font-size: 20px;
+  }
+  span {
+    margin-left: 8px;
+  }
+}

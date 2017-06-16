@@ -6,90 +6,89 @@
   left: 0;
   width: 100%;
   height: auto;
-  background: $black;
+  background: $white;
   color: white;
+  z-index: 9;
   a {
     display: inline-flex;
-    padding: 20px;
+    margin: 20px;
+    color: $black;
+    font-family: $font-heading;
   }
 }
 
-.page-wrap {}
-
+.page-wrap {
+  overflow: hidden;
+}
 section {
   &.pad {
-    padding: 60px 0;
+    padding: 60px 0
   }
 }
 
-
-// Hero
-.hero {
-  height: 75vh;
-  background: $primary;
-}
-
-
-
-
-
-
-
-
-
-
-form {
-  margin: 20px auto 40px;
-  text-align: center;
-  .error {
-    display: block;
-    color: red;
-  }
-}
-input {
-  display: block;
-  width: 100%;
-  max-width: 300px;
-  margin: 15px auto;
-  border: none;
-  border-bottom: 4px solid $gray;
-  padding: 10px;
-}
-button {
+.hero-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
-  background-color: $primary;
-  border: none;
-  color: #fff;
-  display: inline-block;
-  font-size: 1em;
-  font-weight: normal;
-  padding: 10px 30px;
-  transition: 0.25s all ease-out;
-  cursor: pointer;
-  &:hover {
-    background: darken($primary,7%);
+  height: 75vh;
+  min-height: 75%;
+  background: $accent;
+  //background-image: url("https://images.unsplash.com/photo-1465068642484-84a40c946217?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=&bg=");
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  z-index: 2;
+
+  &:after {
+    position: absolute;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    opacity: 0.4;
+    background-image: url("https://www.toptal.com/designers/subtlepatterns/patterns/congruent_outline.png");
+  }
+
+  .hero-nav__inner {
+    z-index: 2;
+  }
+}
+canvas {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 1;
+}
+.hero-nav__content {
+  margin: 2.5em auto auto auto;
+  padding: 2em;
+  text-align: center;
+  color: $white;
+
+  h1 {
+    margin: 0 0 0.25em;
+    padding: 0;
+  }
+
+  span {
+    font-size: 0.3em;
+    font-family: $font-body;
+    vertical-align: middle;
+  }
+
+  p {
+    margin: 0;
   }
 }
 
-.items {
-  .item {
-    padding: 5px;
-    background: $gray;
-    border-bottom: 1px solid #fff;
-    &:hover {
-      background: darken($gray,7%);
-    }
-    &:nth-child(even) {
-      background: darken($gray,7%);
-      &:hover {
-        background: darken($gray,14%);
-      }
-    }
-  }
-  li a {
-    font-size: 20px;
-  }
-  span {
-    margin-left: 8px;
-  }
+.page-content {
+  margin: 0 auto;
+}
+p + p {
+  margin-top: 20px;
 }

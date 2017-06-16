@@ -1,6 +1,8 @@
 // Base
 // The foundational and global aspects of the site
-
+*, *:before, *:after {
+    box-sizing: border-box;
+}
 html,
 body {
   overflow-x: hidden; //prevent scroll on mobile
@@ -16,6 +18,7 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
+  font-family: $font-body;
   color: $body;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
@@ -60,4 +63,39 @@ th {
 tbody tr:nth-child(odd) td,
 tbody tr:nth-child(odd) th {
   background-color: #f9f9f9;
+}
+
+h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5,h6,.h6 {
+	font-family: $font-heading;
+	font-weight: normal;
+	line-height: 1.2;
+	//margin: 0 0 1em;
+	//padding: 1em 0 0;
+	word-wrap: break-word;
+}
+
+h1,
+.h1 {
+	font-size: calc-em(50px);
+  font-weight: 600;
+}
+h2,
+.h2 {
+	font-size: calc-em(40px);
+}
+h3,
+.h3 {
+	font-size: calc-em(30px);
+}
+h4,
+.h4 {
+	font-size: calc-em(24px);
+}
+h5,
+.h5 {
+	font-size: calc-em(20px);
+}
+h6,
+.h6 {
+	font-size: calc-em(16px);
 }

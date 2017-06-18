@@ -1,0 +1,41 @@
+
+// colors
+.text-primary {
+  color: $primary;
+}
+.text-accent {
+  color: $accent;
+}
+.text-white {
+  color: $white;
+}
+.text-muted {
+  color: $gray;
+}
+// colors - bg
+.bg-primary {
+  background: $primary;
+}
+.bg-accent {
+  background: $accent;
+}
+.bg-white {
+  background: $white;
+}
+.bg-gray {
+  background: $gray;
+}
+
+
+// text alignment
+.text-center {
+	text-align: center;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.text-left {
+	text-align: left;
+}

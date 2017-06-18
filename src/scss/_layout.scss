@@ -6,53 +6,47 @@
   left: 0;
   width: 100%;
   height: auto;
-  background: $white;
+  //background: $white;
   color: white;
   z-index: 9;
+  .logo {
+    padding: 0;
+  }
   a {
     display: inline-flex;
-    margin: 20px;
-    color: $black;
-    font-family: $font-heading;
+    margin: 60px auto;
+    padding: 0 30px;
+    color: $white;
+    font-size: calc-em(20px);
+    font-family: $font-body;
   }
 }
 
-.page-wrap {
-  overflow: hidden;
-}
-section {
-  &.pad {
-    padding: 60px 0
+.container {
+  &__smaller {
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
-.hero-nav {
+
+// Hero
+.hero {
   display: flex;
+  position: relative;
   justify-content: center;
   align-items: center;
-  position: relative;
-  height: 75vh;
-  min-height: 75%;
-  background: $accent;
-  //background-image: url("https://images.unsplash.com/photo-1465068642484-84a40c946217?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=&bg=");
+  color: white;
+  height: calc-em(600px);
+  background: $primary;
+  background-image: url("http://ecap.co.nz/wp-content/themes/endeavour/r/img/pattern.svg");
   background-size: cover;
   background-position: center;
   overflow: hidden;
   z-index: 2;
-
-  &:after {
-    position: absolute;
-    left: 0;
-    content: "";
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-    opacity: 0.4;
-    background-image: url("https://www.toptal.com/designers/subtlepatterns/patterns/congruent_outline.png");
-  }
-
-  .hero-nav__inner {
-    z-index: 2;
+  span {
+    color: $accent;
   }
 }
 canvas {
@@ -64,28 +58,18 @@ canvas {
   overflow: hidden;
   z-index: 1;
 }
-.hero-nav__content {
-  margin: 2.5em auto auto auto;
-  padding: 2em;
-  text-align: center;
-  color: $white;
 
-  h1 {
-    margin: 0 0 0.25em;
-    padding: 0;
-  }
 
-  span {
-    font-size: 0.3em;
-    font-family: $font-body;
-    vertical-align: middle;
-  }
 
-  p {
-    margin: 0;
+// Layout
+.page-wrap {
+  overflow: hidden;
+}
+section {
+  &.pad {
+    padding: 60px 0
   }
 }
-
 .page-content {
   margin: 0 auto;
 }

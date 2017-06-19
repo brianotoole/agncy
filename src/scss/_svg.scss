@@ -61,7 +61,7 @@ svg:not(:root) {
 	stroke: rgba($white, 0.05);
 	stroke-width: 1px;
 	stroke-dasharray: 1689;
-	animation: fillSvg 10s reverse linear;
+	animation: fillSvg 12s reverse linear;
 }
 
 @keyframes fillSvg {

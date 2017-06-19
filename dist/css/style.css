@@ -68,7 +68,7 @@ body {
   -ms-text-size-adjust: 100%; }
 
 a {
-  color: #002e5b;
+  color: #25283D;
   text-decoration: none; }
   a:hover, a:focus {
     text-decoration: underline; }
@@ -687,7 +687,7 @@ h6,
   left: 0;
   width: 100%;
   height: 4px;
-  background: #fde428;
+  background: #00E6A2;
   z-index: 99; }
 
 .header {
@@ -699,11 +699,24 @@ h6,
   color: white;
   z-index: 9; }
   .header .logo {
-    padding: 0; }
+    padding: 0;
+    font-family: "Anaheim", sans-serif;
+    font-size: 1.375em;
+    font-weight: 100;
+    text-transform: lowercase;
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear; }
+    .header .logo:hover {
+      text-decoration: none;
+      color: #00E6A2; }
     .header .logo span {
-      font-family: "Anaheim", sans-serif;
-      font-weight: 100;
-      text-transform: lowercase; }
+      display: inline-block;
+      margin: -7px 1px; }
+      .header .logo span:after {
+        content: '.';
+        font-size: 1.25em;
+        font-weight: 700;
+        color: #00E6A2; }
   .header a {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
@@ -711,7 +724,7 @@ h6,
     margin: 60px auto;
     padding: 0 30px;
     color: #ffffff;
-    font-size: 1.25em;
+    font-size: 1.125em;
     font-family: "Droid Serif", serif; }
 
 #nav-toggle {
@@ -727,7 +740,7 @@ h6,
   height: 4px;
   margin: 0;
   margin-top: -8px;
-  background: #fde428;
+  background: #00E6A2;
   -webkit-transition: all 0.3s;
   transition: all 0.3s; }
   .patty:before, .patty:after {
@@ -735,7 +748,7 @@ h6,
     display: block;
     width: 24px;
     height: 4px;
-    background: #fde428;
+    background: #00E6A2;
     position: relative;
     z-index: -1;
     -webkit-transition: all 0.3s;
@@ -749,7 +762,7 @@ body.nav-open {
   height: 100vh; }
   body.nav-open .nav-background {
     display: table;
-    background: #002e5b;
+    background: #25283D;
     background-size: cover;
     background-position: center; }
   body.nav-open .patty {
@@ -789,7 +802,7 @@ body.nav-open {
       text-align: center;
       margin: 0;
       padding: 30px 0;
-      color: #fde428;
+      color: #00E6A2;
       font-size: 1.75em;
       text-transform: uppercase; }
       .nav-background ul li a:hover {
@@ -807,15 +820,15 @@ body.nav-open {
       -ms-flex-align: center;
           align-items: center;
   color: white;
-  height: 37.5em;
-  background: #002e5b;
+  height: 35em;
+  background: #25283D;
   background-size: cover;
   background-position: center;
   overflow: hidden;
   z-index: 2; }
   .hero span {
     position: relative;
-    color: #fde428; }
+    color: #00E6A2; }
 
 .page-wrap {
   overflow: hidden; }
@@ -849,7 +862,7 @@ p + p {
 
 .btn {
   position: relative;
-  background-color: #002e5b;
+  background-color: #25283D;
   border: none;
   border-radius: 5px;
   color: #ffffff;
@@ -861,15 +874,15 @@ p + p {
   -webkit-transition: 0.25s all ease-out;
   transition: 0.25s all ease-out; }
   .btn.primary {
-    background-color: #002e5b;
+    background-color: #25283D;
     color: #ffffff; }
     .btn.primary:hover {
-      background-color: #00488e;
+      background-color: #383d5d;
       text-decoration: none; }
   .btn.rounded {
     border-radius: 10em; }
   .btn.accent {
-    background-color: #fde428; }
+    background-color: #00E6A2; }
 
 svg:not(:root) {
   overflow: visible; }
@@ -883,35 +896,35 @@ svg:not(:root) {
       font-size: 10em; } }
 
 .web {
-  color: #002e5b; }
+  color: #25283D; }
 
 .browser {
-  color: #002e5b; }
+  color: #25283D; }
 
 .gear {
-  color: #002e5b;
+  color: #25283D;
   transform-origin: 50% 50%;
   -webkit-transform-origin: 182px 155px;
   -webkit-animation: spin 5s infinite linear;
           animation: spin 5s infinite linear; }
 
 .gear-mid {
-  color: #002e5b; }
+  color: #25283D; }
 
 .terminal {
-  color: #002e5b; }
+  color: #25283D; }
 
 .slash {
-  color: #002e5b;
+  color: #25283D;
   -webkit-animation: pulse 0.7s infinite linear;
           animation: pulse 0.7s infinite linear; }
 
 .lock {
-  color: #002e5b; }
+  color: #25283D; }
 
 .line-lg,
 .line-sm {
-  color: #002e5b;
+  color: #25283D;
   stroke-linejoin: round;
   stroke-linecap: round;
   stroke-miterlimit: 10;
@@ -939,8 +952,8 @@ svg:not(:root) {
   stroke: rgba(255, 255, 255, 0.05);
   stroke-width: 1px;
   stroke-dasharray: 1689;
-  -webkit-animation: fillSvg 10s reverse linear;
-          animation: fillSvg 10s reverse linear; }
+  -webkit-animation: fillSvg 12s reverse linear;
+          animation: fillSvg 12s reverse linear; }
 
 @-webkit-keyframes fillSvg {
   from {
@@ -1017,10 +1030,10 @@ svg:not(:root) {
     opacity: 1; } }
 
 .text-primary {
-  color: #002e5b; }
+  color: #25283D; }
 
 .text-accent {
-  color: #fde428; }
+  color: #00E6A2; }
 
 .text-white {
   color: #ffffff; }
@@ -1029,10 +1042,10 @@ svg:not(:root) {
   color: #f1f1f1; }
 
 .bg-primary {
-  background: #002e5b; }
+  background: #25283D; }
 
 .bg-accent {
-  background: #fde428; }
+  background: #00E6A2; }
 
 .bg-white {
   background: #ffffff; }

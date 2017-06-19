@@ -20,10 +20,24 @@
   z-index: 9;
   .logo {
     padding: 0;
+    font-family: $font-heading;
+    font-size: calc-em(22px);
+    font-weight: 100;
+    text-transform: lowercase;
+    transition: all 0.2s linear;
+    &:hover {
+      text-decoration: none;
+      color: $accent;
+    }
     span {
-      font-family: $font-heading;
-      font-weight: 100;
-      text-transform: lowercase;
+      display: inline-block;
+      margin: -7px 1px;
+      &:after {
+        content: '.';
+        font-size: calc-em(20px);
+        font-weight: 700;
+        color: $accent;
+      }
     }
   }
   a {
@@ -31,7 +45,7 @@
     margin: 60px auto;
     padding: 0 30px;
     color: $white;
-    font-size: calc-em(20px);
+    font-size: calc-em(18px);
     font-family: $font-body;
   }
 }
@@ -138,7 +152,7 @@ body.nav-open {
   justify-content: center;
   align-items: center;
   color: white;
-  height: calc-em(600px);
+  height: calc-em(560px);
   background: $primary;
   //background-image: url("http://ecap.co.nz/wp-content/themes/endeavour/r/img/pattern.svg");
   background-size: cover;

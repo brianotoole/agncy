@@ -159,6 +159,9 @@ body.nav-open {
   background-position: center;
   overflow: hidden;
   z-index: 2;
+  &.interior {
+    height: calc-em(400px);
+  }
   span {
     position: relative;
     color: $accent;

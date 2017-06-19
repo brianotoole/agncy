@@ -826,6 +826,8 @@ body.nav-open {
   background-position: center;
   overflow: hidden;
   z-index: 2; }
+  .hero.interior {
+    height: 25em; }
   .hero span {
     position: relative;
     color: #00E6A2; }

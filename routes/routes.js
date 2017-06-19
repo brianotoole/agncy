@@ -35,6 +35,13 @@ router.get('/', function (req, res, err) {
       });
   //});
 });
+router.get('/about', function (req, res, err) {
+    if (err) console.log(err.code);
+      res.render('index', {
+        title: 'About'
+      });
+});
+
 
 /*
 // Create item

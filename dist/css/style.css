@@ -223,6 +223,12 @@ h6,
   padding-right: 0.9375em;
   padding-left: 0.9375em; }
 
+.container-full {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0;
+  padding-right: 0; }
+
 .row {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -713,6 +719,15 @@ h6,
         -ms-flex-order: 1;
             order: 1; } }
 
+.line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: #fde428;
+  z-index: 99; }
+
 .header {
   position: absolute;
   top: 0;
@@ -723,6 +738,10 @@ h6,
   z-index: 9; }
   .header .logo {
     padding: 0; }
+    .header .logo span {
+      font-family: "Francois One", sans-serif;
+      font-weight: 100;
+      text-transform: lowercase; }
   .header a {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
@@ -768,7 +787,9 @@ body.nav-open {
   height: 100vh; }
   body.nav-open .nav-background {
     display: table;
-    background: #002e5b; }
+    background: #002e5b;
+    background-size: cover;
+    background-position: center; }
   body.nav-open .patty {
     background: none;
     z-index: 9; }
@@ -789,8 +810,9 @@ body.nav-open {
   width: 100%;
   height: 100vh;
   background: none;
-  -webkit-transition: background 0.6s cubic-bezier(0.7, 0.01, 0.3, 1);
-  transition: background 0.6s cubic-bezier(0.7, 0.01, 0.3, 1); }
+  overflow: hidden;
+  -webkit-transition: background 0.6s linear;
+  transition: background 0.6s linear; }
   .nav-background ul {
     top: 0;
     visibility: visible;
@@ -799,13 +821,17 @@ body.nav-open {
     vertical-align: middle;
     opacity: 1;
     margin-top: 0; }
-    .nav-background ul li {
+    .nav-background ul li a {
+      display: block;
       list-style: none;
       text-align: center;
-      padding: 10px 0;
+      margin: 0;
+      padding: 30px 0;
       color: #fde428;
       font-size: 1.75em;
       text-transform: uppercase; }
+      .nav-background ul li a:hover {
+        background: rgba(255, 255, 255, 0.5); }
 
 .hero {
   display: -webkit-box;
@@ -821,7 +847,6 @@ body.nav-open {
   color: white;
   height: 37.5em;
   background: #002e5b;
-  background-image: url("http://ecap.co.nz/wp-content/themes/endeavour/r/img/pattern.svg");
   background-size: cover;
   background-position: center;
   overflow: hidden;
@@ -829,15 +854,6 @@ body.nav-open {
   .hero span {
     position: relative;
     color: #fde428; }
-
-canvas {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  z-index: 1; }
 
 .page-wrap {
   overflow: hidden; }
@@ -856,6 +872,15 @@ section.pad {
 
 p + p {
   margin-top: 20px; }
+
+.intro {
+  border-bottom: 2px solid rgba(204, 204, 204, 0.5); }
+
+.services .card {
+  padding: 60px 30px;
+  border-right: 2px solid rgba(204, 204, 204, 0.5); }
+  .services .card:last-of-type {
+    border: none; }
 
 .btn {
   position: relative;
@@ -878,6 +903,151 @@ p + p {
       text-decoration: none; }
   .btn.rounded {
     border-radius: 10em; }
+
+svg:not(:root) {
+  overflow: visible; }
+
+.svg-wrap {
+  width: 1em;
+  height: 1em;
+  font-size: 8em; }
+  @media (min-width: 800px) {
+    .svg-wrap {
+      font-size: 10em; } }
+
+.web {
+  color: #002e5b; }
+
+.browser {
+  color: #002e5b; }
+
+.gear {
+  color: #002e5b;
+  transform-origin: 50% 50%;
+  -webkit-transform-origin: 182px 155px;
+  -webkit-animation: spin 5s infinite linear;
+          animation: spin 5s infinite linear; }
+
+.gear-mid {
+  color: #002e5b; }
+
+.terminal {
+  color: #002e5b; }
+
+.slash {
+  color: #002e5b;
+  -webkit-animation: pulse 0.7s infinite linear;
+          animation: pulse 0.7s infinite linear; }
+
+.lock {
+  color: #002e5b; }
+
+.line-lg,
+.line-sm {
+  color: #002e5b;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  stroke-miterlimit: 10;
+  stroke-dasharray: 500;
+  stroke-dashoffset: 500; }
+
+.line-lg {
+  -webkit-animation: draw 2s infinite linear forwards, fadeIn 2s infinite linear reverse;
+          animation: draw 2s infinite linear forwards, fadeIn 2s infinite linear reverse; }
+
+.line-sm {
+  -webkit-animation: draw 2s 1s infinite linear forwards, fadeIn 2s 1s infinite linear reverse;
+          animation: draw 2s 1s infinite linear forwards, fadeIn 2s 1s infinite linear reverse; }
+
+.svg-lines {
+  position: absolute;
+  width: 100%;
+  margin: 0 auto;
+  height: auto;
+  font-size: 20em; }
+
+.path-lines {
+  fill: currentColor;
+  color: transparent;
+  stroke: rgba(255, 255, 255, 0.05);
+  stroke-width: 1px;
+  stroke-dasharray: 1689;
+  -webkit-animation: fillSvg 10s reverse linear;
+          animation: fillSvg 10s reverse linear; }
+
+@-webkit-keyframes fillSvg {
+  from {
+    stroke-dashoffset: 0; }
+  to {
+    stroke-dashoffset: 1689; } }
+
+@keyframes fillSvg {
+  from {
+    stroke-dashoffset: 0; }
+  to {
+    stroke-dashoffset: 1689; } }
+
+@-webkit-keyframes fillWidth {
+  from {
+    width: 0; }
+  to {
+    width: 100%; } }
+
+@keyframes fillWidth {
+  from {
+    width: 0; }
+  to {
+    width: 100%; } }
+
+.fillWidth {
+  -webkit-animation: fillWidth 0.5s linear;
+          animation: fillWidth 0.5s linear; }
+
+@-webkit-keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+
+@keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+
+@-webkit-keyframes pulse {
+  0% {
+    opacity: 0.75; }
+  50% {
+    opacity: 1; }
+  100% {
+    opacity: 0.75; } }
+
+@keyframes pulse {
+  0% {
+    opacity: 0.75; }
+  50% {
+    opacity: 1; }
+  100% {
+    opacity: 0.75; } }
+
+@-webkit-keyframes draw {
+  100% {
+    stroke-dashoffset: 0; } }
+
+@keyframes draw {
+  100% {
+    stroke-dashoffset: 0; } }
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 
 .text-primary {
   color: #002e5b; }
@@ -911,3 +1081,9 @@ p + p {
 
 .text-left {
   text-align: left; }
+
+.no-pad {
+  padding: 0; }
+
+.full-height {
+  height: 100vh; }

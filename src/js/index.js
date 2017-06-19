@@ -6,9 +6,15 @@ $(document).ready(function() {
 
 $('#nav-toggle').on('click', function() {
   $('body').toggleClass('nav-open');
+  $('.line').toggleClass('fillWidth');
 });
-// Canvas
 
+// get shape of svg for anim
+/*
+var shape = document.querySelector('#lines');
+var shapeLength = shape.getTotalLength();
+console.log(shapeLength); //1689.4237060546875
+*/
 
 
 

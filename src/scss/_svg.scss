@@ -1,0 +1,94 @@
+svg:not(:root) {
+  overflow: visible;
+}
+.svg-wrap {
+	width: 1em;
+	height: 1em;
+	font-size: 8em;
+  @media (min-width: $bp-medium) {
+    font-size: 10em;
+  }
+}
+.web {color: $primary;}
+.browser {color: $primary;}
+.gear {
+	color: $primary;
+	transform-origin: 50% 50%;
+  -webkit-transform-origin: 182px 155px;
+	animation: spin 5s infinite linear;
+}
+.gear-mid {color: $primary;}
+
+.terminal {
+	color: $primary;
+}
+.slash {
+	color: $primary;
+	animation: pulse 0.7s infinite linear;
+}
+
+.lock {
+	color: $primary;
+}
+.line-lg,
+.line-sm {
+	color: $primary;
+	stroke-linejoin: round;
+	stroke-linecap: round;
+	stroke-miterlimit: 10;
+	stroke-dasharray: 500;
+	stroke-dashoffset: 500;
+}
+.line-lg {
+	animation: draw 2s infinite linear forwards,
+		         fadeIn 2s infinite linear reverse;
+}
+.line-sm {
+	animation: draw 2s 1s infinite linear forwards,
+		         fadeIn 2s 1s infinite linear reverse;
+}
+
+.svg-lines {
+  position: absolute;
+	width: 100%;
+  margin: 0 auto;
+	height: auto;
+	font-size: 20em;
+}
+.path-lines {
+	fill: currentColor;
+	color: transparent;
+	stroke: rgba($white, 0.05);
+	stroke-width: 1px;
+	stroke-dasharray: 1689;
+	animation: fillSvg 10s reverse linear;
+}
+
+@keyframes fillSvg {
+	from {stroke-dashoffset: 0;}
+	to {stroke-dashoffset: 1689;}
+}
+@keyframes fillWidth {
+  from {width: 0;}
+  to {width: 100%;}
+}
+.fillWidth {
+  animation: fillWidth 0.5s linear;
+}
+
+@keyframes spin {
+  to {transform: rotate(360deg);}
+}
+
+@keyframes pulse {
+  0% {opacity: 0.75;}
+  50% {opacity: 1;}
+	100% {opacity: 0.75;}
+}
+@keyframes draw {
+  100% {stroke-dashoffset: 0;}
+}
+@keyframes fadeIn {
+	0% {opacity: 0;}
+  100% {opacity: 1;}
+}

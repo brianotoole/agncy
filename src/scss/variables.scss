@@ -12,6 +12,7 @@ $white: #ffffff;
 
 // Components
 $color-link: darken($primary, 7%);
+$border-light: rgba(#ccc, 0.5);
 $color-info: #0088cc; // Blue
 $color-success: #377f31; // Green
 $color-error: #880e14; // Red
@@ -22,6 +23,8 @@ $color-code: #dd1144;
 $font-heading: "Francois One", sans-serif;
 $font-body: "Didact Gothic", serif;
 $font-monospace: monospace;
+
+$bp-medium: 800px;
 
 // Sizing
 $font-size-body: 100%; //use a relative size (ex - 100%); changing variable will adjust scale of site

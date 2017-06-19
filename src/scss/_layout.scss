@@ -237,25 +237,27 @@ body.interior {
 .interior-wrap {
   margin-top: 142px;
 }
-
 .about-intro {
+  margin-bottom: 60px;
   .flex-wrap {
     display: flex;
     justify-content: space-between;
+    position: relative;
+    z-index: 3;
     @media (max-width: $bp-medium) {
       flex-wrap: wrap;
     }
     .flex-item {
       flex: 0 1 auto;
-      margin: 10px;
+      margin: 4px;
       width: auto;
       height: auto;
       padding: 60px 30px;
       &.small {
-        width: 32%;
+        width: 33.333%;
       }
       &.large {
-        width: 65%;
+        width: 66.666%;
       }
       &.large,
       &.small {

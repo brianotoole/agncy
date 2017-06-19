@@ -902,32 +902,36 @@ body.interior .header {
 .interior-wrap {
   margin-top: 142px; }
 
-.about-intro .flex-wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
-  @media (max-width: 800px) {
-    .about-intro .flex-wrap {
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap; } }
-  .about-intro .flex-wrap .flex-item {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 auto;
-            flex: 0 1 auto;
-    margin: 10px;
-    width: auto;
-    height: auto;
-    padding: 60px 30px; }
-    .about-intro .flex-wrap .flex-item.small {
-      width: 32%; }
-    .about-intro .flex-wrap .flex-item.large {
-      width: 65%; }
+.about-intro {
+  margin-bottom: 60px; }
+  .about-intro .flex-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    position: relative;
+    z-index: 3; }
     @media (max-width: 800px) {
-      .about-intro .flex-wrap .flex-item.large, .about-intro .flex-wrap .flex-item.small {
-        width: 100%; } }
+      .about-intro .flex-wrap {
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; } }
+    .about-intro .flex-wrap .flex-item {
+      -webkit-box-flex: 0;
+          -ms-flex: 0 1 auto;
+              flex: 0 1 auto;
+      margin: 4px;
+      width: auto;
+      height: auto;
+      padding: 60px 30px; }
+      .about-intro .flex-wrap .flex-item.small {
+        width: 33.333%; }
+      .about-intro .flex-wrap .flex-item.large {
+        width: 66.666%; }
+      @media (max-width: 800px) {
+        .about-intro .flex-wrap .flex-item.large, .about-intro .flex-wrap .flex-item.small {
+          width: 100%; } }
 
 .btn {
   position: relative;
@@ -1030,7 +1034,8 @@ svg:not(:root) {
   height: 100%; }
 
 .path-bulb,
-.path-notebook {
+.path-comp,
+.path-digital {
   fill: currentColor;
   color: transparent;
   stroke: #ffffff;
@@ -1039,10 +1044,15 @@ svg:not(:root) {
   -webkit-animation: fillSvg 3s reverse linear;
           animation: fillSvg 3s reverse linear; }
 
-.path-notebook {
-  stroke-width: 0.75px;
+.path-comp {
+  stroke-width: 1.75px;
   -webkit-animation: fillSvg 2s reverse linear;
           animation: fillSvg 2s reverse linear; }
+
+.path-digital {
+  stroke-width: 0.5px;
+  -webkit-animation: fillSvg 5s reverse linear;
+          animation: fillSvg 5s reverse linear; }
 
 @-webkit-keyframes fillSvg {
   from {

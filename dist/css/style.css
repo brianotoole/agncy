@@ -734,6 +734,7 @@ h6,
     font-family: "Didact Gothic", serif; }
 
 .container__smaller {
+  width: 100%;
   max-width: 80%;
   margin-left: auto;
   margin-right: auto; }
@@ -758,6 +759,7 @@ h6,
   overflow: hidden;
   z-index: 2; }
   .hero span {
+    position: relative;
     color: #fde428; }
 
 canvas {

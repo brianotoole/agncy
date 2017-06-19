@@ -24,6 +24,7 @@
 
 .container {
   &__smaller {
+    width: 100%;
     max-width: 80%;
     margin-left: auto;
     margin-right: auto;
@@ -46,6 +47,7 @@
   overflow: hidden;
   z-index: 2;
   span {
+    position: relative;
     color: $accent;
   }
 }

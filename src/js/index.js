@@ -3,6 +3,10 @@ require("../scss/style.scss");
 $(document).ready(function() {
 
 });
+
+$('#nav-toggle').on('click', function() {
+  $('body').toggleClass('nav-open');
+});
 // Canvas
 
 

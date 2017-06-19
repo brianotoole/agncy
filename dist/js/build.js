@@ -81,6 +81,10 @@ __webpack_require__(0);
 $(document).ready(function() {
 
 });
+
+$('#nav-toggle').on('click', function() {
+  $('body').toggleClass('nav-open');
+});
 // Canvas
 
 

@@ -8,7 +8,7 @@
   font-size: 1em;
   font-weight: normal;
   line-height: 1.2;
-  padding: 10px 30px;
+  padding: 12px 40px;
   transition: 0.25s all ease-out;
   &.primary {
     background-color: $primary;
@@ -20,5 +20,8 @@
   }
   &.rounded {
     border-radius: 10em;
+  }
+  &.accent {
+    background-color: $accent;
   }
 }

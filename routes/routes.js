@@ -38,7 +38,8 @@ router.get('/', function (req, res, err) {
 router.get('/about', function (req, res, err) {
     if (err) console.log(err.code);
       res.render('about', {
-        title: 'About'
+        title: 'About',
+        layout: 'page.hbs'
       });
 });
 

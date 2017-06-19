@@ -6,7 +6,7 @@ $(document).ready(function() {
 
 $('#nav-toggle').on('click', function() {
   $('body').toggleClass('nav-open');
-  $('.line').toggleClass('fillWidth');
+  //$('.line').toggleClass('fillWidth');
 });
 
 // get shape of svg for anim

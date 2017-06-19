@@ -242,16 +242,26 @@ body.interior {
   .flex-wrap {
     display: flex;
     justify-content: space-between;
+    @media (max-width: $bp-medium) {
+      flex-wrap: wrap;
+    }
     .flex-item {
       flex: 0 1 auto;
       margin: 10px;
       width: auto;
-      height: 300px;
-      &.one, &.four {
+      height: auto;
+      padding: 60px 30px;
+      &.small {
         width: 32%;
       }
-      &.two, &.three {
+      &.large {
         width: 65%;
+      }
+      &.large,
+      &.small {
+        @media (max-width: $bp-medium) {
+          width: 100%;
+        }
       }
     }
   }

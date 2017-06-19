@@ -69,9 +69,18 @@ svg:not(:root) {
   margin: auto;
   height: 100%;
 }
-.path-bulb {
+.path-bulb,
+.path-notebook {
   fill: currentColor;
-  color: $white;
+  color: transparent;
+	stroke: $white;
+	stroke-width: 3px;
+	stroke-dasharray: 1689;
+	animation: fillSvg 3s reverse linear;
+}
+.path-notebook {
+  stroke-width: 0.75px;
+  animation: fillSvg 2s reverse linear;
 }
 
 @keyframes fillSvg {

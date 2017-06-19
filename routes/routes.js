@@ -30,7 +30,8 @@ router.get('/', function (req, res, err) {
   //connect.query('SELECT * FROM name', function(err, result) {
     if (err) console.log(err.code);
       res.render('index', {
-        title: 'Home'
+        title: 'Home',
+        bodyClass: 'home'
         //todos: result
       });
   //});
@@ -39,7 +40,24 @@ router.get('/about', function (req, res, err) {
     if (err) console.log(err.code);
       res.render('about', {
         title: 'About',
-        layout: 'page.hbs'
+        bodyClass: 'interior about'
+        //layout: 'page.hbs'
+      });
+});
+router.get('/services', function (req, res, err) {
+    if (err) console.log(err.code);
+      res.render('services', {
+        title: 'Services',
+        bodyClass: 'interior services'
+        //layout: 'page.hbs'
+      });
+});
+router.get('/work', function (req, res, err) {
+    if (err) console.log(err.code);
+      res.render('work', {
+        title: 'Work',
+        bodyClass: 'interior work'
+        //layout: 'page.hbs'
       });
 });
 

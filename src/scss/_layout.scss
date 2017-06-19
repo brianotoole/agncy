@@ -227,3 +227,14 @@ p + p {
 .home-cta {
   border-bottom: 2px solid $border-light;
 }
+
+
+// Interior page template
+body.interior {
+  .header {
+    background: $primary;
+  }
+}
+.interior-wrap {
+  margin-top: 142px;
+}

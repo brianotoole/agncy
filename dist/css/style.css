@@ -896,6 +896,12 @@ p + p {
 .home-cta {
   border-bottom: 2px solid rgba(204, 204, 204, 0.5); }
 
+body.interior .header {
+  background: #25283D; }
+
+.interior-wrap {
+  margin-top: 142px; }
+
 .btn {
   position: relative;
   background-color: #25283D;

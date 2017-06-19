@@ -64,6 +64,16 @@ svg:not(:root) {
 	animation: fillSvg 12s reverse linear;
 }
 
+.svg-wrap-block {
+  display: block;
+  margin: auto;
+  height: 100%;
+}
+.path-bulb {
+  fill: currentColor;
+  color: $white;
+}
+
 @keyframes fillSvg {
 	from {stroke-dashoffset: 0;}
 	to {stroke-dashoffset: 1689;}

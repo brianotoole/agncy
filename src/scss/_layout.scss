@@ -237,3 +237,22 @@ body.interior {
 .interior-wrap {
   margin-top: 142px;
 }
+
+.about-intro {
+  .flex-wrap {
+    display: flex;
+    justify-content: space-between;
+    .flex-item {
+      flex: 0 1 auto;
+      margin: 10px;
+      width: auto;
+      height: 300px;
+      &.one, &.four {
+        width: 32%;
+      }
+      &.two, &.three {
+        width: 65%;
+      }
+    }
+  }
+}

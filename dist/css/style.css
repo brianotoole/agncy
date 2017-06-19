@@ -716,7 +716,7 @@ h6,
   z-index: 9; }
   @media (max-width: 800px) {
     .header {
-      background: #111; } }
+      background: #25283D; } }
   .header .logo {
     padding: 0;
     font-family: "Anaheim", sans-serif;
@@ -793,8 +793,8 @@ h6,
   height: 100vh;
   background: #181927;
   overflow: hidden;
-  -webkit-transform: translateX(100%);
-          transform: translateX(100%);
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
   -webkit-transition: -webkit-transform 0.3s linear;
   transition: -webkit-transform 0.3s linear;
   transition: transform 0.3s linear;
@@ -824,8 +824,8 @@ body.nav-open {
   body.nav-open .nav-background {
     background-size: cover;
     background-position: center;
-    -webkit-transform: translateX(0);
-            transform: translateX(0); }
+    -webkit-transform: translateY(0);
+            transform: translateY(0); }
   body.nav-open .patty {
     background: none;
     z-index: 9; }

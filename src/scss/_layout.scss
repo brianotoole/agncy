@@ -23,8 +23,10 @@
   }
   .logo {
     padding: 0;
+    margin-top: 52px;
+    margin-bottom: 0;
     font-family: $font-heading;
-    font-size: calc-em(22px);
+    font-size: calc-em(34px);
     font-weight: 100;
     text-transform: lowercase;
     transition: all 0.2s linear;
@@ -34,11 +36,12 @@
     }
     span {
       display: inline-block;
-      margin: -7px 1px;
+      margin: -14px 2px;
       &:after {
         content: '.';
         font-size: calc-em(20px);
         font-weight: 700;
+        font-family: $font-body;
         color: $accent;
       }
     }
@@ -239,6 +242,10 @@ body.interior {
 }
 .about-intro {
   margin-bottom: 60px;
+  .container-full {
+    padding-left: 4px;
+    padding-right: 4px;
+  }
   .flex-wrap {
     display: flex;
     justify-content: space-between;
@@ -252,6 +259,7 @@ body.interior {
       margin: 4px;
       width: auto;
       height: auto;
+      min-height: 300px;
       padding: 60px 30px;
       &.small {
         width: 33.333%;

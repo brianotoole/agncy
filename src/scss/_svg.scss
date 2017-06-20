@@ -74,7 +74,7 @@ svg:not(:root) {
 .path-digital {
   fill: currentColor;
   color: transparent;
-	stroke: $white;
+	stroke: $accent;
 	stroke-width: 3px;
 	stroke-dasharray: 1689;
 	animation: fillSvg 3s reverse linear;
